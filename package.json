@@ -1,0 +1,19 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "description": "A zero dependency file server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "Jon Casey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joncasey/my-server"
+  },
+  "keywords": [
+    "http",
+    "server"
+  ]
+}
