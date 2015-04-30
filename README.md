@@ -8,15 +8,17 @@ A zero dependency file server.
 
 var server = require('my-server')()
 
-server.get('/v/*', function (req, res) {
-  res.sendFile(req.url.replace('/v/', 'd:/video/'))
+server.all(function (req, res) {
+  res.json({
+    headers: req.headers,
+    method: req.method,
+    range: req.headers.range,
+    url: req.url
+  }, 0, 2)
 })
 
-server.get(function (req, res) {
-  res.sendFile(__dirname + req.path)
-})
+server.listen(5000)
 
-server.listen(80)
 
 ```
 
