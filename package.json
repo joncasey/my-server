@@ -1,6 +1,6 @@
 {
   "name": "my-server",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A zero dependency file server.",
   "main": "index.js",
   "scripts": {
